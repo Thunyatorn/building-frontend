@@ -7,7 +7,7 @@ export default function About() {
     return (
         <>
             <Head>
-                <title>Building 9 - Login</title>
+                <title>Building 9 | Login</title>
                 <meta name="description" content="btuhdasd" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
