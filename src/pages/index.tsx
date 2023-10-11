@@ -8,7 +8,7 @@ export default function Home() {
       <Head>
         <title>Building 9</title>
         <meta name="description" content="btuhdasd" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo-new.png" />
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c]">
         <h1 className="absolute top-1/4 justify-center text-5xl text-white">

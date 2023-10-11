@@ -9,7 +9,7 @@ export default function About() {
       <Head>
         <title>Building 9 | Register</title>
         <meta name="description" content="btuhdasd" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo-new.png" />
       </Head>
       {/* <main> */}
       <div className="flex w-full flex-col items-center py-6">

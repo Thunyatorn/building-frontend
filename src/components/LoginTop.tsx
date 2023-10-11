@@ -1,5 +1,9 @@
 import Image from "next/image";
 import { Formik, Field, Form, FormikHelpers } from "formik";
+// import { Form } from "react-advanced-form";
+// import { Input } from "react-advanced-form-addons";
+import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 
 interface Values {
   username: string;
@@ -7,6 +11,12 @@ interface Values {
 }
 
 export const LoginTop = () => {
+  // const navigate = useNavigate();
+
+  // const navigateRegister = () => {
+  //   navigate("/register");
+  // };
+
   return (
     <div className="relative h-screen w-full bg-[rgb(251,226,236)]">
       {/* mobile */}
@@ -19,7 +29,7 @@ export const LoginTop = () => {
             height={600}
             alt="bruh"
           />
-          <form className="absolute left-1/2 top-[39%] z-10 flex -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-4 rounded-lg bg-pink-200 p-6">
+          <form className="absolute left-1/2 top-[39%] z-40 flex -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-4 rounded-lg bg-pink-200 p-6">
             <h1 className="mb-4 text-3xl">Login</h1>
             <input
               className="rounded-full border-solid border-pink-300 shadow-sm"
@@ -74,18 +84,30 @@ export const LoginTop = () => {
             height={600}
             alt="bruh"
           />
-          <form className="absolute left-[38.5%] top-[46%] z-10 flex -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-4 rounded-lg bg-pink-200 p-6">
+          <form className="absolute left-[38.5%] top-[46%] z-40 flex -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-4 rounded-lg bg-pink-200 p-6">
             <h1 className="mb-4 text-3xl">Login</h1>
             <input
-              // placeholder="     username??"
-              className="h-10 w-80 rounded-full border-solid border-pink-300 shadow-sm"
+              placeholder="username"
+              className="h-10 w-80 rounded-full border-solid border-pink-300 text-center shadow-sm"
+              // onFocus={this.handle}
             />
             <input
-              // placeholder="     password??"
-              className="h-10 w-80 rounded-full border-solid border-pink-300 shadow-sm"
+              placeholder="password"
+              className="h-10 w-80 rounded-full border-solid border-pink-300 text-center shadow-sm"
             />
+            <div className="relative flex h-5 w-[100%] flex-col items-end">
+              <button className="h-5 w-36 rounded-xl border-solid text-gray-600">
+                Forgot Password
+              </button>
+            </div>
             <button className="h-10 w-36 rounded-xl border-solid border-pink-300 bg-white align-middle shadow-sm">
-              submit
+              Login
+            </button>
+            <button
+              className="h-5 w-36 rounded-xl border-solid align-middle text-gray-600"
+              // onClick={navigateRegister}
+            >
+              Register
             </button>
           </form>
           <Image
